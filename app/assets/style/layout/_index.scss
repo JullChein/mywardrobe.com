@@ -4,6 +4,17 @@
   padding: 0 12px;
 }
 
+.container-box {
+  max-width: 856px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.form-box {
+  max-width: 416px;
+  margin: 0 auto;
+}
+
 .banner {
   background-image: url("../../images/section-1.1.png");
   background-position: left;
@@ -12,4 +23,14 @@
 
 .card img {
   opacity: .85;
+}
+
+.btn-outline-primary:hover {
+  color: $white;
+}
+
+.border-arc {
+  border: 1px solid $primary;
+  border-radius: 50px 50px 0 0;
+  padding: 2rem 1rem 0.5rem 1rem;
 }
