@@ -1,6 +1,50 @@
 ---
-title: Boostrap Index
+title: 帳號管理
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<div class="container pt-5 pb-5">
+    <div class="container-box bg-secondary">
+        <div class="fs-2 text-primary fw-bold text-center pt-4 pb-4">帳號管理</div>
+        <div class="form-box d-flex flex-column">
+            <form class="pb-5">
+                <div class="mb-3">
+                    <label for="text" class="form-label">變更帳號</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="text" aria-describedby="text">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">變更密碼</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="d-flex justify-content-center"><a type="button"
+                        class="btn btn-primary text-center text-light fs-5 mt-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        確認變更
+                    </a></div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fs-3" id="exampleModalLabel">帳號管理</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center">
+
+                                <div class="fs-4">個人基本資料修改成功！</div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary text-light"
+                                    data-bs-dismiss="modal">關閉視窗</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
