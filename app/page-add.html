@@ -4,8 +4,23 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="container">
-    <div class="bg-secondary pt-4 pb-4">
-        <div class="fs-2 text-primary fw-bold text-center pb-4">新增衣服</div>
+<div class="container pt-3 pb-5">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="card bg-primary text-center">
+                <div class="card-header text-light fs-5">
+                    我的衣櫥
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fs-5"><a href="page-all.html">衣櫥一覽</a></li>
+                    <li class="list-group-item fs-5"><a href="page-add.html">新增衣服</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="bg-secondary pt-4 pb-4 ps-4 pe-4">
+                <div class="fs-2 text-primary fw-bold text-center pb-4">新增衣服</div>
+            </div>
+        </div>
     </div>
 </div>
