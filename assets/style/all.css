@@ -12354,4 +12354,28 @@ span {
   padding: 2rem 1rem 0.5rem 1rem;
 }
 
+.nav-link:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000000D9;
+}
+
+.wardrobe {
+  width: 306px;
+  height: 408px;
+  position: relative;
+  display: inline-block;
+}
+
+.wardrobe .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.wardrobe:hover .img-top {
+  display: inline;
+}
+
 /*# sourceMappingURL=all.css.map */
