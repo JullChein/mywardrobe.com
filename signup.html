@@ -69,7 +69,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">確認密碼</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密碼">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="再次輸入密碼">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">電子郵件信箱</label>
@@ -80,13 +80,18 @@
                 <div class="mb-3 form-check d-flex justify-content-center">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label text-dark" for="exampleCheck1">我已仔細<a href="#"
-                            class="d-inline text-info">閱讀並同意會員服務事項條款</a></label>
+                            class="d-inline text-info info">閱讀並同意會員服務事項條款</a></label>
 
                 </div>
-                <div class="d-flex justify-content-center"><a class="btn btn-primary text-center text-light fs-5"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="d-grid">
+                    <a class="btn btn-primary text-center text-light fs-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         註冊
-                    </a></div>
+                    </a>
+                    <div class="d-flex flex-column align-items-center pt-5"><small
+                            class="text-info pb-2">已有會員身份請從此登入</small></div><a href="login.html"
+                        class="btn btn-outline-primary text-center fs-5">登入</a>
+                </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -107,10 +112,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column align-items-center pt-5"><small
-                        class="text-info pb-2">已有會員身份請從此登入</small><a href="login.html"
-                        class="btn btn-outline-primary text-center fs-5">登入</a></div>
-
             </form>
         </div>
     </div>

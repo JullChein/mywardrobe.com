@@ -12378,4 +12378,8 @@ span {
   display: inline;
 }
 
+.info:hover {
+  opacity: .5;
+}
+
 /*# sourceMappingURL=all.css.map */

@@ -52,23 +52,44 @@
     </div>
   </nav>
 
-  <div class="container pt-5 pb-5">
-    <div class="container-box bg-secondary">
-        <div class="fs-2 text-primary fw-bold text-center pt-4 pb-4">帳號管理</div>
+  <div class="container-box bg-secondary pt-5 pb-5 mt-5 mb-5">
+    <div class="fs-2 text-primary fw-bold text-center pb-4">帳號管理</div>
+    <div class="container-box">
         <div class="form-box d-flex flex-column">
-            <form class="pb-5">
-                <div class="mb-3">
-                    <label for="text" class="form-label">變更帳號</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="text" aria-describedby="text" placeholder="新帳號">
+            <form class="pb-3 border-bottom mb-4">
+                <fieldset disabled>
+                    <legend class="text-dark">帳戶資訊</legend>
+                    <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">帳號</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="hannahlee">
                     </div>
+                    <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">密碼</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="******">
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">電子郵件信箱</label>
+                        <input type="text" id="disabledTextInput" class="form-control"
+                            placeholder="hannahlee214@gmail.com">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="form-box d-flex flex-column">
+            <form>
+                <div class="mb-3">
+                    <legend class="text-dark">修改資訊</legend>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">變更密碼</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="新密碼">
                 </div>
-                <div class="d-flex justify-content-center"><a class="btn btn-primary text-center text-light fs-5 mt-4"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">確認密碼</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="再次輸入新密碼">
+                </div>
+                <div class="d-grid"><a class="btn btn-primary text-center text-light fs-5 mt-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         確認變更
                     </a></div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -81,7 +102,6 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center">
-
                                 <div class="fs-4">個人基本資料修改成功！</div>
                             </div>
                             <div class="modal-footer">
