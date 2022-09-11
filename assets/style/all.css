@@ -12376,6 +12376,9 @@ span {
 
 .wardrobe:hover .img-top {
   display: inline;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .info:hover {
