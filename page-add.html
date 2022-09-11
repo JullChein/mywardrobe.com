@@ -54,27 +54,43 @@
   </nav>
 
   <div class="container pt-3 pb-5">
-    <div class="row">
-        <div class="col-lg-2">
-            <div class="card bg-primary text-center">
-                <div class="card-header text-light fs-5">
-                    我的衣櫥
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="page.html">我的衣櫥</a></li>
+            <li class="breadcrumb-item active" aria-current="page">新增衣服</li>
+        </ol>
+    </nav>
+    <div class="bg-secondary pt-4 pb-4 ps-4 pe-4">
+        <div class="fs-2 text-primary fw-bold text-center pb-4">新增衣服</div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="btn btn-outline-secondary text-dark d-flex align-items-center fw-bold fs-6 justify-content-center border"
+                    style="height: auto;">
+                    <span class="material-icons text-info fs-1">
+                        image
+                    </span>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item fs-5"><a href="page-all.html">衣櫥一覽</a></li>
-                    <li class="list-group-item fs-5"><a href="page-add.html">新增衣服</a></li>
-                </ul>
             </div>
         </div>
-        <div class="col-lg-10">
-            <div class="bg-secondary pt-4 pb-4 ps-4 pe-4">
-                <div class="fs-2 text-primary fw-bold text-center pb-4">新增衣服</div>
-                <div class="">
-                    <div class="btn btn-outline-secondary text-dark d-flex align-items-center fw-bold fs-6 justify-content-center border"
-                        style="width: 12rem; height: 12rem;">
-                        <span class="material-icons text-info fs-1">
-                            image
-                        </span>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <a href="page.html" class="btn btn-primary text-center text-light fs-5" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">確認新增</a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="exampleModalLabel">新增衣服</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-5">
+                        衣服新增成功！
+                    </div>
+                    <div class="modal-footer">
+                        <a href="page.html" class="btn btn-primary text-center text-light">回到衣櫥</a>
                     </div>
                 </div>
             </div>
