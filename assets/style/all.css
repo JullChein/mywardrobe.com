@@ -12371,14 +12371,46 @@ span {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.lion:hover::before {
+  position: absolute;
+  content: url("../images/section-2.3-lion.png");
+  width: auto;
+  height: auto;
+  left: 0;
+  z-index: 99;
+}
+
+.witch:hover::before {
+  position: absolute;
+  content: url("../images/section-2.4-witch.png");
+  width: auto;
+  height: auto;
+  left: 0;
+  z-index: 99;
+}
+
+.book:hover::before {
+  position: absolute;
+  content: url("../images/section-2.5-book.png");
+  width: auto;
+  height: auto;
+  left: 0;
+  z-index: 99;
+}
+
+.hanger:hover::before {
+  position: absolute;
+  content: url("../images/section-2.6-clothes.png");
+  width: auto;
+  height: auto;
+  left: 0;
   z-index: 99;
 }
 
 .wardrobe:hover .img-top {
   display: inline;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
 }
 
 .info:hover {
