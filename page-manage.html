@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    新增衣服
+    管理衣服
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -57,23 +57,18 @@
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="page.html">我的衣櫥</a></li>
-            <li class="breadcrumb-item active" aria-current="page">新增衣服</li>
+            <li class="breadcrumb-item active" aria-current="page">管理衣服</li>
         </ol>
     </nav>
     <div class="bg-secondary py-4 px-4">
-        <div class="fs-2 text-primary fw-bold text-center pb-4">新增衣服</div>
+        <div class="fs-2 text-primary fw-bold text-center pb-4">管理衣服</div>
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="mb-3 mg-lg-0">
                     <p class="mb-2">衣服圖片</p>
                     <div class="btn btn-outline-secondary text-dark d-flex align-items-center fw-bold fs-6 justify-content-center border"
                         style="height: 296px;">
-                        <input type="file" name="file" id="file" class="input-file">
-                        <label for="file" class="btn btn-tertiary d-flex justify-content-center align-items-center">
-                            <span class="material-icons text-info fs-1">
-                                image
-                            </span>
-                        </label>
+                        <img src="assets/images/sample-1.jpg" alt="" style="height: 100%;">
                     </div>
                 </div>
             </div>
@@ -81,13 +76,14 @@
                 <div class="mb-3">
                     <label for="text" class="form-label">衣服名稱</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="text" aria-describedby="text" placeholder="輸入衣服名稱">
+                        <input type="text" class="form-control" id="text" aria-describedby="text"
+                            placeholder="米白短袖排釦洋裝">
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="inputState" class="form-label">衣服分類</label>
                     <select id="inputState" class="form-select">
-                        <option selected>選擇衣服分類</option>
+                        <option selected>連身</option>
                         <option>上衣</option>
                         <option>下著</option>
                         <option>連身</option>
@@ -98,7 +94,7 @@
                 <div class="mb-3">
                     <label for="inputState" class="form-label">喜歡程度</label>
                     <select id="inputState" class="form-select">
-                        <option selected>選擇喜歡程度</option>
+                        <option selected>喜歡</option>
                         <option>喜歡</option>
                         <option>普通</option>
                         <option>不喜歡</option>
@@ -108,7 +104,7 @@
                 <div class="mb-3">
                     <label for="inputState" class="form-label">處理方式</label>
                     <select id="inputState" class="form-select">
-                        <option selected>選擇處理方式</option>
+                        <option selected>考慮中</option>
                         <option>留在衣櫃</option>
                         <option>考慮中</option>
                         <option>捐贈｜丟棄</option>
@@ -119,24 +115,43 @@
         <div class="mb-4">
             <p class="mb-2">衣服故事</p>
             <div class="form-floating">
-                <textarea class="form-control" placeholder="為這件衣服留下一些故事吧 ⋯ ⋯" id="floatingTextarea2"
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                     style="height: 144px"></textarea>
-                <label for="floatingTextarea2">為這件衣服留下一些故事吧 ⋯ ⋯</label>
+                <label for="floatingTextarea2">2019 年夏天去韓國時購買，非常喜歡的一件洋裝！穿著他在首爾渡過了一個精彩的假期。<br>
+                    雖然非常喜歡，但有將近一整年沒有穿過他了，也不是我近期的穿衣風格，最近在考慮要不要送給其他朋友。</label>
             </div>
         </div>
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-end gap-4">
+            <a href="page.html" class="btn btn-outline-primary text-center fs-5" data-bs-toggle="modal"
+                data-bs-target="#deleteModal">刪除衣服</a>
             <a href="page.html" class="btn btn-primary text-center text-light fs-5" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">確認新增</a>
+                data-bs-target="#exampleModal">變更衣服</a>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title fs-3" id="exampleModalLabel">新增衣服</h5>
+                        <h5 class="modal-title fs-3" id="exampleModalLabel">管理衣服</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body fs-5">
-                        衣服新增成功！
+                        衣服資訊變更成功！
+                    </div>
+                    <div class="modal-footer">
+                        <a href="page.html" class="btn btn-primary text-center text-light">回到衣櫥</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="exampleModalLabel">管理衣服</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-5">
+                        衣服刪除成功！
                     </div>
                     <div class="modal-footer">
                         <a href="page.html" class="btn btn-primary text-center text-light">回到衣櫥</a>
