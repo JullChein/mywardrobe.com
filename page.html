@@ -53,7 +53,7 @@
     </div>
   </nav>
 
-  <div class="bg-secondary py-4">
+  <div class="bg-secondary py-4 d-none d-md-block">
   <div class="container">
     <div class="d-flex align-items-center flex-column flex-md-row">
       <div class="d-flex flex-column align-items-center d-none d-md-inline">
@@ -66,26 +66,6 @@
           <p class="text-info">"If you love something, wear it all the time... Find things that suit you. That's how you
             look extraordinary." </p>
         </div>
-        <div class="mt-0 mt-md-3">
-          <a class="btn btn-primary text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-            aria-controls="offcanvasExample">
-            管理衣櫃
-          </a>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">管理衣櫃</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="d-flex flex-column gap-3">
-                <a class="btn btn-primary text-white" href="page-add.html" role="button">新增衣服</a>
-                <a class="btn btn-outline-primary" href="page-manage.html" role="button">管理衣服</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -94,7 +74,27 @@
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
     <div class="col">
       <div class="card">
+        <a href="page-add.html">
+          <span
+            class="d-flex align-items-center justify-content-center material-symbols-outlined fs-7 fw-bold text-primary bg-secondary text-center"
+            style="height: 280px;">
+            add
+          </span>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title mb-3">衣服名稱</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">衣服分類</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">喜歡程度</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">處理方式</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
         <img src="assets/images/sample-1.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">軍綠吊帶短洋裝</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">連身</small></a>
@@ -106,17 +106,24 @@
     <div class="col">
       <div class="card">
         <img src="assets/images/sample-2.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">橘咖長袖飛行夾克</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">上衣</small></a>
-          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">普通</small></a>
-          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">考慮中</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">不喜歡</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small
+              class="text-white">捐贈｜丟棄</small></a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
         <img src="assets/images/sample-3.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">杏色編織披肩</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">配件</small></a>
@@ -127,19 +134,10 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="assets/images/sample-4.jpg" class="card-img-top" alt="..." style="height: 280px;">
-        <div class="card-body">
-          <h5 class="card-title mb-3">純白長袖帽 T</h5>
-          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">上衣</small></a>
-          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">不喜歡</small></a>
-          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small
-              class="text-white">捐贈｜丟棄</small></a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
         <img src="assets/images/sample-5.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">米白長袖襯衫</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">上衣</small></a>
@@ -151,6 +149,9 @@
     <div class="col">
       <div class="card">
         <img src="assets/images/sample-6.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">淺藍中腰牛仔褲</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">下著</small></a>
@@ -162,6 +163,9 @@
     <div class="col">
       <div class="card">
         <img src="assets/images/sample-7.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">裸色蛇紋高跟鞋</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">鞋襪</small></a>
@@ -174,6 +178,9 @@
     <div class="col">
       <div class="card">
         <img src="assets/images/sample-8.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <a href="page-manage.html" class="edit"><span class="material-symbols-outlined">
+            edit
+          </span></a>
         <div class="card-body">
           <h5 class="card-title mb-3">銀色圓形墨鏡</h5>
           <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">配件</small></a>

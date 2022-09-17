@@ -9198,6 +9198,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-7 {
+  font-size: calc(1.625rem + 4.5vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -14015,6 +14019,9 @@ fieldset:disabled .btn {
   .fs-4 {
     font-size: 1.5rem !important;
   }
+  .fs-7 {
+    font-size: 5rem !important;
+  }
 }
 
 @media print {
@@ -14226,6 +14233,21 @@ span {
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+
+.edit {
+  position: absolute;
+  color: #00000080;
+  top: 0;
+  right: 0px;
+  padding: 12px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.edit .edit:hover {
+  color: #FFA971;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -53,10 +53,9 @@
     </div>
   </nav>
 
-  <div class="container pt-5 pb-5 mt-5 mb-5">
-
+  <div class="container py-5">
     <div class="container-box bg-secondary">
-        <div class="fs-2 text-primary fw-bold text-center pb-4">帳號管理</div>
+        <div class="fs-2 text-primary fw-bold text-center pt-4 pb-4">帳號管理</div>
         <div class="form-box d-flex flex-column">
             <form class="pb-3 border-bottom mb-4">
                 <fieldset disabled>
@@ -90,8 +89,16 @@
                     <label for="exampleInputPassword1" class="form-label">確認密碼</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="再次輸入新密碼">
                 </div>
-                <div class="d-grid"><a class="btn btn-primary text-center text-light fs-5 mt-4" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                <div class="mb-3">
+                    <p class="mb-2">個人資訊</p>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="輸入個人資訊" id="floatingTextarea2"
+                            style="height: 96px"></textarea>
+                        <label for="floatingTextarea2">輸入個人資訊</label>
+                    </div>
+                </div>
+                <div class="d-grid pb-4"><a class="btn btn-primary text-center text-light fs-5 mt-4"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
                         確認變更
                     </a></div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
