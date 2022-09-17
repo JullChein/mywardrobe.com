@@ -53,24 +53,156 @@
     </div>
   </nav>
 
-  <div class="bg-secondary">
-  <div class="container py-4">
+  <div class="bg-secondary py-4">
+  <div class="container">
     <div class="d-flex align-items-center flex-column flex-md-row">
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center d-none d-md-inline">
         <img class="rounded-circle border border-white img-cover" src="assets/images/user.jpg" alt="Profile Picture"
-          style="height: 143px; width: 143px;">
+          style="height: 120px; width: 120px;">
       </div>
-      <div class="ms-5">
-        <h3 class="my-3">Hannah Lee</h3>
-        <p class="text-info">"If you love something, wear it all the time... Find things that suit you. That's how you
-          look extraordinary." </p>
-        <div class="mt-3">
-          <a class="btn btn-primary text-white" href="page-add.html" role="button">新增衣服</a>
-          <a class="btn btn-outline-primary ms-3" href="page-manage.html" role="button">管理衣服</a>
+      <div class="ms-0 ms-md-5 text-center text-md-start">
+        <div class="d-none d-md-inline">
+          <h3 class="my-3">Hannah Lee</h3>
+          <p class="text-info">"If you love something, wear it all the time... Find things that suit you. That's how you
+            look extraordinary." </p>
+        </div>
+        <div class="mt-0 mt-md-3">
+          <a class="btn btn-primary text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            管理衣櫃
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">管理衣櫃</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-flex flex-column gap-3">
+                <a class="btn btn-primary text-white" href="page-add.html" role="button">新增衣服</a>
+                <a class="btn btn-outline-primary" href="page-manage.html" role="button">管理衣服</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-1.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">軍綠吊帶短洋裝</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">連身</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">喜歡</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">考慮中</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-2.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">橘咖長袖飛行夾克</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">上衣</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">普通</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">考慮中</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-3.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">杏色編織披肩</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">配件</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">喜歡</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">留在衣櫃</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-4.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">純白長袖帽 T</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">上衣</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">不喜歡</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small
+              class="text-white">捐贈｜丟棄</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-5.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">米白長袖襯衫</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">上衣</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">普通</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">留在衣櫃</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-6.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">淺藍中腰牛仔褲</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">下著</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">喜歡</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">留在衣櫃</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-7.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">裸色蛇紋高跟鞋</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">鞋襪</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">普通</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small
+              class="text-white">捐贈｜丟棄</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/sample-8.jpg" class="card-img-top" alt="..." style="height: 280px;">
+        <div class="card-body">
+          <h5 class="card-title mb-3">銀色圓形墨鏡</h5>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">配件</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">喜歡</small></a>
+          <a class="btn btn-primary rounded-pill py-1" href="#" role="button"><small class="text-white">留在衣櫃</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="Page navigation example" class="mt-4">
+    <div class="d-flex justify-content-center">
+      <ul class="pagination pagination-lg">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
     <footer class="footer bg-primary pt-6 pb-6">
       <div class="pb-3">
