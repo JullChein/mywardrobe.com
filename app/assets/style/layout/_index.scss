@@ -133,4 +133,15 @@
   z-index: -1;
 }
 
-.card:hover {}
+.edit {
+  position: absolute;
+  color: $info;
+  top: 0;
+  right: 0px;
+  padding: 12px;
+  writing-mode: vertical-lr;
+
+  .edit:hover {
+    color: $primary;
+  }
+}
