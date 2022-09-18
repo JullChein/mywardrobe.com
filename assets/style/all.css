@@ -14250,4 +14250,9 @@ span {
   color: #FFA971;
 }
 
+.card:hover {
+  -webkit-box-shadow: 4px 4px 4px #00000080;
+          box-shadow: 4px 4px 4px #00000080;
+}
+
 /*# sourceMappingURL=all.css.map */
