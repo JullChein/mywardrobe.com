@@ -145,3 +145,7 @@
     color: $primary;
   }
 }
+
+.card:hover {
+  box-shadow: 4px 4px 4px $info;
+}
